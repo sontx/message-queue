@@ -2,26 +2,28 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="receiver" />
+		<Option title="linux-mq" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/receiver" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/linux-mq" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/receiver" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/linux-mq" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -33,9 +35,17 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Linker>
-			<Add library="../shared/bin/Debug/libshared.a" />
+			<Add option="-pthread" />
 		</Linker>
-		<Unit filename="receiver.cpp" />
+		<Unit filename="include/Calc.h" />
+		<Unit filename="include/Client.h" />
+		<Unit filename="include/MessageHanlder.h" />
+		<Unit filename="include/Server.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Calc.cpp" />
+		<Unit filename="src/Client.cpp" />
+		<Unit filename="src/MessageHanlder.cpp" />
+		<Unit filename="src/Server.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />
