@@ -50,10 +50,10 @@ Version 1.0.0 is just a simple message queue for win32
 ## Author
 Developed by sontx/noem, some useful information:
 
- - Home: [www.sontx.in](http://www.sontx.in)
- - My blog: [www.blog.sontx.in](http://www.blog.sontx.in)
+ - Home: [www.code4bugs.com](www.code4bugs.com)
+ - My blog: [www.sontx.blogspot.com](http://www.sontx.blogspot.com)
  - Email: <a href="mailto:xuanson33bk@gmail.com">xuanson33bk@gmail.com</a>
- - Facebook: [No Em](https://mobile.facebook.com/Melkior.9x)
+ - Facebook: [No Em](https://mobile.facebook.com/noem.bk)
 
 ## License
 Copyright 2016 Tran Xuan Son
